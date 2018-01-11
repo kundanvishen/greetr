@@ -60,6 +60,11 @@
         console.log(logMessages[this.language] + ': ' + this.fullName());
       }
       return this; // make this method chainable too
+    },
+    setLang: function(lang){
+      this.language = lang;
+      this.validate();
+      return this;
     }
   };
 
